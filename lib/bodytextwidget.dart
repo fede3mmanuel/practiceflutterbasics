@@ -13,9 +13,8 @@ class _bodytextwidgetState extends State<bodytextwidget> {
   String bodyText = 'Text of the body part version:';
 
   void add() {
-    setState(() {
-      count++;
-    });
+    count++;
+    setState(() {});
   }
 
   @override
