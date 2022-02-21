@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-// import './appbarwid.dart';
+
+import './topbar.dart';
 import './bodytextwidget.dart';
 
 void main(List<String> args) {
@@ -11,11 +12,8 @@ class basics extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('hello'),
-        ),
+        appBar: TopBar(),
         body: bodytextwidget(),
-        // body: bodytextwidget(),
       ),
     );
   }
