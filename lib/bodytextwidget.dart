@@ -23,7 +23,6 @@ class _bodytextwidgetState extends State<bodytextwidget> {
     return Center(
       child: Column(
         children: [
-          // Text('$bodyText $count')
           BodyText(bodyText, count),
           ElevatedButton(
               child: Text('$bodyText $count'),
