@@ -11,9 +11,11 @@ class basics extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-          appBar: AppBar(
-        title: Text("Time to practice: Flutter Basics"),
-      )),
+        appBar: AppBar(
+          title: Text("Time to practice: Flutter Basics"),
+        ),
+        body: Center(child: Text('Text of the body part')),
+      ),
     );
   }
 }
