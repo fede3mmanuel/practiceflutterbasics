@@ -10,7 +10,7 @@ class bodytextwidget extends StatefulWidget {
 class _bodytextwidgetState extends State<bodytextwidget> {
   int count = 0;
 
-  String bodyText = 'Text of the body part version:';
+  String bodyText = 'Text of the body part, version:';
 
   void add() {
     count++;
