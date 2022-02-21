@@ -26,11 +26,23 @@ class bodytextwidget extends StatefulWidget {
 }
 
 class _bodytextwidgetState extends State<bodytextwidget> {
-  String bodyText = 'Text of the body part';
+  int count = 0;
+
+  String bodyText = 'Text of the body part version:';
+
+  void add() {
+    count++;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text(bodyText),
+      child: Column(
+        children: [
+          Text(bodyText),
+          RaisedButton(child: Text('$bodyText is $count'), onPressed: add)
+        ],
+      ),
     );
   }
 }
