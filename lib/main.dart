@@ -31,7 +31,10 @@ class _bodytextwidgetState extends State<bodytextwidget> {
   String bodyText = 'Text of the body part version:';
 
   void add() {
-    count++;
+    setState(() {
+      count++;
+      print('test $count');
+    });
   }
 
   @override
@@ -40,7 +43,11 @@ class _bodytextwidgetState extends State<bodytextwidget> {
       child: Column(
         children: [
           Text(bodyText),
-          RaisedButton(child: Text('$bodyText is $count'), onPressed: add)
+          RaisedButton(
+              child: Text('$bodyText is $count'),
+              onPressed: () {
+                add();
+              })
         ],
       ),
     );
