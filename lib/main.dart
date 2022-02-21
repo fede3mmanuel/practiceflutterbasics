@@ -14,8 +14,24 @@ class basics extends StatelessWidget {
         appBar: AppBar(
           title: Text("Time to practice: Flutter Basics"),
         ),
-        body: Center(child: Text(bodyText)),
+        body: bodytextwidget(),
       ),
+    );
+  }
+}
+
+class bodytextwidget extends StatefulWidget {
+  bodytextwidget({Key? key}) : super(key: key);
+
+  @override
+  State<bodytextwidget> createState() => _bodytextwidgetState();
+}
+
+class _bodytextwidgetState extends State<bodytextwidget> {
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Text('testing'),
     );
   }
 }
