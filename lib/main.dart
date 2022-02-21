@@ -5,7 +5,7 @@ void main(List<String> args) {
 }
 
 class basics extends StatelessWidget {
-  const basics({Key? key}) : super(key: key);
+  String bodyText = 'Text of the body part';
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class basics extends StatelessWidget {
         appBar: AppBar(
           title: Text("Time to practice: Flutter Basics"),
         ),
-        body: Center(child: Text('Text of the body part')),
+        body: Center(child: Text(bodyText)),
       ),
     );
   }
