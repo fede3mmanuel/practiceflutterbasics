@@ -33,7 +33,6 @@ class _bodytextwidgetState extends State<bodytextwidget> {
   void add() {
     setState(() {
       count++;
-      print('test $count');
     });
   }
 
