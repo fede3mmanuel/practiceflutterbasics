@@ -5,8 +5,6 @@ void main(List<String> args) {
 }
 
 class basics extends StatelessWidget {
-  String bodyText = 'Text of the body part';
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -28,10 +26,11 @@ class bodytextwidget extends StatefulWidget {
 }
 
 class _bodytextwidgetState extends State<bodytextwidget> {
+  String bodyText = 'Text of the body part';
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text('testing'),
+      child: Text(bodyText),
     );
   }
 }
