@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './bodytext.dart';
 
 class bodytextwidget extends StatefulWidget {
   bodytextwidget({Key? key}) : super(key: key);
@@ -22,7 +23,8 @@ class _bodytextwidgetState extends State<bodytextwidget> {
     return Center(
       child: Column(
         children: [
-          Text('$bodyText $count'),
+          // Text('$bodyText $count')
+          BodyText('firstvariable'),
           ElevatedButton(
               child: Text('$bodyText $count'),
               onPressed: () {
