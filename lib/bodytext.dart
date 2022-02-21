@@ -16,8 +16,7 @@ class _BodyTextState extends State<BodyText> {
 
   String get mastertextplusvalue {
     String resultmastertextplusvalue;
-    print(mastertextState);
-    resultmastertextplusvalue = mastertextState;
+    resultmastertextplusvalue = mastertextState + '123';
     return resultmastertextplusvalue;
   }
 
