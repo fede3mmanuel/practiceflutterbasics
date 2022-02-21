@@ -2,21 +2,23 @@ import 'package:flutter/material.dart';
 
 class BodyText extends StatefulWidget {
   String masterText;
+  int count;
 
-  BodyText(this.masterText, {Key? key}) : super(key: key);
+  BodyText(this.masterText, this.count, {Key? key}) : super(key: key);
 
   @override
-  State<BodyText> createState() => _BodyTextState(masterText);
+  State<BodyText> createState() => _BodyTextState(masterText, count);
 }
 
 class _BodyTextState extends State<BodyText> {
   String mastertextState;
+  int countState;
 
-  _BodyTextState(this.mastertextState);
+  _BodyTextState(this.mastertextState, this.countState);
 
   String get mastertextplusvalue {
     String resultmastertextplusvalue;
-    resultmastertextplusvalue = mastertextState + '123';
+    resultmastertextplusvalue = mastertextState + '$countState';
     return resultmastertextplusvalue;
   }
 

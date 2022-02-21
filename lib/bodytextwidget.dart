@@ -24,7 +24,7 @@ class _bodytextwidgetState extends State<bodytextwidget> {
       child: Column(
         children: [
           // Text('$bodyText $count')
-          BodyText('firstvariable'),
+          BodyText(bodyText, count),
           ElevatedButton(
               child: Text('$bodyText $count'),
               onPressed: () {
