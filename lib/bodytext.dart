@@ -1,18 +1,23 @@
 import 'package:flutter/material.dart';
 
 class BodyText extends StatefulWidget {
-  final String masterText;
+  String masterText;
 
-  BodyText(this.masterText);
+  BodyText(this.masterText, {Key? key}) : super(key: key);
 
   @override
-  State<BodyText> createState() => _BodyTextState();
+  State<BodyText> createState() => _BodyTextState(masterText);
 }
 
 class _BodyTextState extends State<BodyText> {
+  String mastertextState;
+
+  _BodyTextState(this.mastertextState);
+
   String get mastertextplusvalue {
     String resultmastertextplusvalue;
-    resultmastertextplusvalue = "hoping";
+    print(mastertextState);
+    resultmastertextplusvalue = mastertextState;
     return resultmastertextplusvalue;
   }
 
