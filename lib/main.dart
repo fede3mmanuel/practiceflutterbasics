@@ -12,7 +12,7 @@ class basics extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
           appBar: AppBar(
-        title: Text("app bar"),
+        title: Text("Time to practice: Flutter Basics"),
       )),
     );
   }
