@@ -42,7 +42,7 @@ class _bodytextwidgetState extends State<bodytextwidget> {
     return Center(
       child: Column(
         children: [
-          Text(bodyText),
+          Text('$bodyText is $count'),
           ElevatedButton(
               child: Text('$bodyText is $count'),
               onPressed: () {
